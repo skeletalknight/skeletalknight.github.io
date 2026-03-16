@@ -1,0 +1,76 @@
+{
+  "items": [
+
+    {
+      "date": "(03/2026)",
+      "content": [
+        { "text": "📝 Our work on " },
+        { "text": "Efficient Sparse Attention", "bold": true },
+        { "text": " for Video World Models has been submitted to " },
+        { "text": "ECCV 2026", "bold": true },
+        { "text": "." }
+      ]
+    },
+    {
+      "date": "(11/2025)",
+      "content": [
+        { "text": "🏆 Our team won the " },
+        { "text": "Global First Place", "bold": true },
+        { "text": " at the " },
+        { "text": "SC25 Indy Student Cluster Competition", "bold": true },
+        { "text": " in the US." }
+      ]
+    },
+    {
+      "date": "(10/2025)",
+      "content": [
+        { "text": "🥇 Awarded the " },
+        { "text": "National Scholarship", "bold": true },
+        { "text": "(Top 1%) for the second consecutive year." }
+      ]
+    },
+    {
+      "date": "(08/2025)",
+      "content": [
+        { "text": "🥈 Our team Won the " },
+        { "text": "Second Prize", "bold": true },
+        { "text": " in the " },
+        { "text": "12th National Parallel Application Challenge (PAC)" },
+        { "text": "." }
+      ]
+    },
+    {
+      "date": "(06/2025)",
+      "content": [
+        { "text": "🌐 Led the design and development of the official website for " },
+        { "text": "X-Lab", "link": "https://example.com/", "bold": true },
+        { "text": " at Zhejiang University from scratch." }
+      ]
+    },
+    {
+      "date": "(05/2025)",
+      "content": [
+        { "text": "🚀 My personal learning blog is now live: " },
+        { "text": "My Notebook", "link": "https://skeletalknight.github.io/My-Notebook/", "bold": true },
+        { "text": "." }
+      ]
+    },
+      {
+      "date": "(05/2025)",
+      "content": [
+        { "text": "💡 Our project on LLM-based database interaction was selected for the " },
+        { "text": "Provincial-level ", "bold": true },
+        { "text": "Innovation Program." }
+      ]
+    },
+    {
+      "date": "(03/2025)",
+      "content": [
+        { "text": "🥇 Won the " },
+        { "text": " First Place", "bold": true },
+        { "text": " in the " },
+        { "text": "9th ICT Competition China Final" }
+      ]
+    }
+  ]
+}

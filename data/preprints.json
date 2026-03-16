@@ -1,0 +1,16 @@
+{
+  "title": "Preprints",
+  "showDate": false,
+  "items": [
+    {
+      "arxiv": "https://arxiv.org/",
+      "title": "BlockVid-2: Co-Design of Sparse Attention and KV Management for Text-Conditioned Interactive Video World Models",
+      "authors": "Zeyu Zhang*, Jinyuan Mao*, Dakai An, Wangbo Zhao, Jiasheng Tang, Yinghao Yu, Fan Wang, Wei Wang, Bohan Zhuang"
+    },
+    {
+      "arxiv": "https://arxiv.org/abs/2506.18407",
+      "title": "IntuiTF: MLLM-Guided Transfer Function Optimization for Direct Volume Rendering",
+      "authors": "Yiyao Wang, Bo Pan, Ke Wang, Han Liu, Jinyuan Mao, Yuxin Liu, Minfeng Zhu, Xiuqi Huang, Weifeng Chen, Bo Zhang, Wei Chen"
+    }
+  ]
+}

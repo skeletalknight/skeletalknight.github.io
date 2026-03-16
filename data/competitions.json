@@ -1,0 +1,38 @@
+{
+  "title": "Competition Results",
+  "showDate": true,
+  "items": [
+    {
+      "date": "2025.11",
+      "content": [
+        { "text": "Global 1st Place", "bold": true },
+        { "text": ", SC25 IndySCC" },
+        { "text": ", with full-stack optimization over distributed simulation workloads." }
+      ]
+    },
+    {
+      "date": "2025.07",
+      "content": [
+        { "text": "Second Prize", "bold": true },
+        { "text": ", 12th National Parallel Application Challenge Finals" },
+        { "text": ", with around 300% performance gain on matrix floating-point tasks." }
+      ]
+    },
+    {
+      "date": "2025.03",
+      "content": [
+        { "text": "1st Place", "bold": true },
+        { "text": ", 9th Huawei ICT China Challenge Finals" },
+        { "text": ", achieved with 1.15x training acceleration after Mind-Speed migration." }
+      ]
+    },
+    {
+      "date": "2024.01",
+      "content": [
+        { "text": "7th in National Finals", "bold": true },
+        { "text": ", Alibaba Cloud Tianchi Autonomous Driving AI Challenge (Track 2)" },
+        { "text": ", by integrating multiple open-source models under limited compute." }
+      ]
+    }
+  ]
+}

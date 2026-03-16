@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260316">
+</head>
+<body>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div class="page-bg"></div>
+  <main class="site-wrap">
+    <section class="hero section-card" id="intro-section">
+      <div class="avatar-wrap">
+        <img id="avatar" alt="Profile photo" class="avatar" src="assets/images/avatar.svg">
+      </div>
+      <div class="hero-content">
+        <h1 id="name" class="name"></h1>
+        <p id="tagline" class="tagline"></p>
+        <div id="intro-paragraphs" class="intro-paragraphs"></div>
+        <div id="social-links" class="social-links"></div>
+      </div>
+    </section>
+
+    <section class="content-section" id="news-section">
+      <h2>News</h2>
+      <div id="news-list" class="news-list"></div>
+    </section>
+
+    <div id="profile-sections"></div>
+  </main>
+
+  <template id="news-item-template">
+    <article class="news-item">
+      <div class="news-date"></div>
+      <p class="news-content"></p>
+    </article>
+  </template>
+
+  <template id="timeline-item-template">
+    <article class="timeline-item">
+      <div class="timeline-date"></div>
+      <p class="timeline-content"></p>
+    </article>
+  </template>
+
+  <script src="script.js?v=20260316" defer></script>
+</body>
+</html>

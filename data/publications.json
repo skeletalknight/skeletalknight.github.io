@@ -1,0 +1,44 @@
+{
+  "items": [
+    {
+      "image": "assets/images/paper-1.svg",
+      "imageAlt": "BlockVid-2 project image placeholder",
+      "title": "BlockVid-2: Co-Design of Sparse Attention and KV Management for Video World Models",
+      "authors": "Jinyuan Mao (Co-author) and collaborators",
+      "description": "Designed a hybrid sparse attention mechanism (HSA) with linear global attention and dynamic execution strategy. The system achieves 5.67x faster inference while preserving key context and SOTA generation quality.",
+      "links": [
+        { "label": "Status", "url": "https://example.com/" }
+      ]
+    },
+    {
+      "image": "assets/images/paper-2.svg",
+      "imageAlt": "Mind-Speed migration project image placeholder",
+      "title": "InternVL2.5 Migration to Mind-Speed for Huawei ICT Finals",
+      "authors": "Jinyuan Mao and team members",
+      "description": "Ported a multimodal foundation model to Mind-Speed and optimized training through model partitioning, parallel execution, and operator fusion. The resulting pipeline achieved about 1.15x training acceleration and helped the team win first place.",
+      "links": [
+        { "label": "Competition", "url": "https://example.com/" }
+      ]
+    },
+    {
+      "image": "assets/images/paper-3.svg",
+      "imageAlt": "AI model engineering project image placeholder",
+      "title": "Smart Contract Review and Verification Module at Nodesk AI",
+      "authors": "Jinyuan Mao (Intern)",
+      "description": "Trained and refined an audit model through cleaning and annotating domain data, improving accuracy by 15%. Also contributed as the second inventor in related patent drafting with reranking and context-aware mechanisms.",
+      "links": [
+        { "label": "Company", "url": "https://example.com/" }
+      ]
+    },
+    {
+      "image": "assets/images/paper-1.svg",
+      "imageAlt": "Xlab infrastructure project image placeholder",
+      "title": "Xlab Operations and Infrastructure Maintenance",
+      "authors": "Jinyuan Mao (Maintainer)",
+      "description": "Managed daily cluster operations and account permissions. Built isolated development environments with Docker for multiple research projects and deployed an internal Overleaf platform while maintaining the official website.",
+      "links": [
+        { "label": "Organization", "url": "https://example.com/" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Internships and Research Experiences",
+  "showDate": true,
+  "items": [
+    {
+      "date": "2025.06-2025.09",
+      "content": [
+        { "text": "Nodesk AI", "bold": true },
+        { "text": ", Research Intern. Trained and refined a smart-contract review module and improved model accuracy by 15%." }
+      ]
+    },
+    {
+      "date": "2025.06-Present",
+      "content": [
+        { "text": "Xlab", "bold": true },
+        { "text": ", Infrastructure Maintainer. Manages cluster operations and Docker-based environments; deployed internal Overleaf services." }
+      ]
+    },
+    {
+      "date": "2024.04-2025.06",
+      "content": [
+        { "text": "Database Intelligence Interaction Framework", "bold": true },
+        { "text": ", Project Lead. Proposed and implemented a provincial innovation project on trial-and-error learning for LLM-enabled database intelligence." }
+      ]
+    }
+  ]
+}

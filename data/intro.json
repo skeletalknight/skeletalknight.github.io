@@ -1,0 +1,46 @@
+{
+  "pageTitle": "Jinyuan Mao",
+  "name": "Jinyuan Mao",
+  "avatar": "assets/images/avatar.png",
+  "paragraphs": [
+    [
+      { "text": "Hi, I am " },
+      { "text": "Jinyuan Mao", "bold": true },
+      { "text": ", an undergraduate at " },
+      { "text": "Zhejiang University", "link": "https://www.zju.edu.cn/english/", "bold": true }
+    ],
+    [
+      { "text": "Currently, I am exploring the intersection of " },
+      { "text": "Efficient AI",  "bold": true },
+      { "text": " and " },
+      { "text": "Generative AI", "bold": true },
+      { "text": ". I am particularly fascinated by how system-level optimizations can push the boundaries of large-scale " },
+      { "text": "Video World Models"},
+      { "text": "." }
+    ],
+    [
+      { "text": "I have been awarded the " },
+      { "text": "National Scholarship", "bold": true },
+      { "text": " (Top 1%) for two consecutive years, ranking " },
+      { "text": "1st" },
+      { "text": " in my major." }
+    ]
+  ],
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/skeletalknight",
+      "iconType": "github"
+    },
+    {
+      "label": "Blog / Notes",
+      "url": "https://skeletalknight.github.io/My-Notebook/",
+      "iconType": "notes"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:jymao@zju.edu.cn",
+      "iconType": "email"
+    }
+  ]
+}
