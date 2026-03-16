@@ -283,6 +283,7 @@ function renderTimelineSection(mountNode, data) {
   const list = document.createElement("ul");
   list.className = "section-bullet-list";
   const showDate = data.showDate !== false;
+  const datePlacement = data.datePlacement === "suffix" ? "suffix" : "prefix";
 
   (data.items || []).forEach((item) => {
     const listItem = document.createElement("li");
@@ -290,15 +291,55 @@ function renderTimelineSection(mountNode, data) {
     const contentNode = document.createElement("p");
     contentNode.className = "section-bullet-text";
 
+    const hasHeadline = Array.isArray(item.headline) && item.headline.length > 0;
+    const headlineSegments = hasHeadline ? item.headline : (item.content || []);
+
     if (showDate && item.date) {
+      if (datePlacement === "prefix") {
+        const dateNode = document.createElement("span");
+        dateNode.className = "section-item-date";
+        dateNode.textContent = `${item.date}, `;
+        contentNode.appendChild(dateNode);
+      }
+    }
+
+    appendRichText(contentNode, headlineSegments);
+
+    if (showDate && item.date && datePlacement === "suffix") {
+      const separator = document.createTextNode(" | ");
       const dateNode = document.createElement("span");
-      dateNode.className = "section-item-date";
-      dateNode.textContent = `${item.date}, `;
+      dateNode.className = "section-item-date section-item-date-suffix";
+      dateNode.textContent = item.date;
+      contentNode.appendChild(separator);
       contentNode.appendChild(dateNode);
     }
 
-    appendRichText(contentNode, item.content || []);
     listItem.appendChild(contentNode);
+
+    const details = Array.isArray(item.details) ? item.details : [];
+    if (details.length > 0) {
+      const detailsList = document.createElement("ul");
+      detailsList.className = "section-subpoint-list";
+
+      details.forEach((detail) => {
+        const detailItem = document.createElement("li");
+        detailItem.className = "section-subpoint-item";
+        const detailText = document.createElement("p");
+        detailText.className = "section-subpoint-text";
+
+        if (Array.isArray(detail)) {
+          appendRichText(detailText, detail);
+        } else if (typeof detail === "string") {
+          detailText.textContent = detail;
+        }
+
+        detailItem.appendChild(detailText);
+        detailsList.appendChild(detailItem);
+      });
+
+      listItem.appendChild(detailsList);
+    }
+
     list.appendChild(listItem);
   });
 

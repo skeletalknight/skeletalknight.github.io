@@ -235,6 +235,25 @@ body {
   color: #1f2d45;
 }
 
+.section-item-date-suffix {
+  font-weight: 600;
+  font-style: italic;
+  color: #4e5969;
+}
+
+.section-subpoint-list {
+  margin: 6px 0 0 20px;
+  padding-left: 18px;
+}
+
+.section-subpoint-item {
+  margin: 0 0 2px;
+}
+
+.section-subpoint-text {
+  margin: 0;
+}
+
 strong {
   font-weight: 800;
 }

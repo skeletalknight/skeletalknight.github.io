@@ -1,26 +1,67 @@
 {
   "title": "Internships and Research Experiences",
   "showDate": true,
+  "datePlacement": "suffix",
   "items": [
     {
-      "date": "2025.06-2025.09",
+      "date": "2025.10 - Present",
       "content": [
-        { "text": "Nodesk AI", "bold": true },
-        { "text": ", Research Intern. Trained and refined a smart-contract review module and improved model accuracy by 15%." }
+        { "text": "Research Assistant @ ZJU ZipLab. Optimized sparse attention and KV-management strategies for video world models, preserving generation quality while delivering up to 5.67x inference acceleration." }
+      ],
+      "headline": [
+        { "text": "Research Assistant", "bold": true },
+        { "text": " @ " },
+        { "text": "ZJU ZipLab", "bold": true }
       ]
     },
     {
-      "date": "2025.06-Present",
+      "date": "2025.06 - Present",
       "content": [
-        { "text": "Xlab", "bold": true },
-        { "text": ", Infrastructure Maintainer. Manages cluster operations and Docker-based environments; deployed internal Overleaf services." }
+        { "text": "Infrastructure Maintainer @ X-Lab, Zhejiang University. Orchestrated cluster operations and Docker-based environments for multiple research groups; deployed and maintained internal Overleaf services." }
+      ],
+      "headline": [
+        { "text": "Infrastructure Maintainer", "bold": true },
+        { "text": " @ " },
+        { "text": "ZJU X-Lab", "bold": true }
+      ],
+      "details": [
+        [
+          { "text": "Orchestrated cluster operations and Docker-based environments for multiple research groups; maintained organization services." }
+        ]
       ]
     },
     {
-      "date": "2024.04-2025.06",
+      "date": "2025.06 - 2025.09",
       "content": [
-        { "text": "Database Intelligence Interaction Framework", "bold": true },
-        { "text": ", Project Lead. Proposed and implemented a provincial innovation project on trial-and-error learning for LLM-enabled database intelligence." }
+        { "text": "Research Intern @ Nodesk AI. Developed and refined smart-contract review modules, achieving a 15% accuracy improvement." }
+      ],
+      "headline": [
+        { "text": "Research Intern", "bold": true },
+        { "text": " @ " },
+        { "text": "Nodesk AI", "bold": true }
+      ],
+      "details": [
+        [
+          { "text": "Developed and refined smart-contract review modules, achieving a " },
+          { "text": "15% accuracy improvement", "bold": true },
+          { "text": "." }
+        ]
+      ]
+    },
+    {
+      "date": "2024.04 - 2025.06",
+      "content": [
+        { "text": "Project Lead @ Database Intelligence Interaction Framework. Developed a provincial innovation project focused on trial-and-error learning for LLM-driven database intelligence applications." }
+      ],
+      "headline": [
+        { "text": "Project Lead", "bold": true },
+        { "text": " @ " },
+        { "text": "Database Intelligence Interaction Framework", "bold": true }
+      ],
+      "details": [
+        [
+          { "text": "Developed a provincial innovation project focused on trial-and-error learning for LLM-driven database intelligence applications." }
+        ]
       ]
     }
   ]

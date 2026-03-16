@@ -3,10 +3,12 @@
   "showDate": true,
   "items": [
     {
-      "date": "2024",
+      "date": "2025",
       "content": [
-        { "text": "National Scholarship", "bold": true },
-        { "text": ", awarded for outstanding academic performance in 2023-2024." }
+        { "text": "SC25 IndySCC", "bold": true },
+        { "text": ", " },
+        { "text": "Global 1st Place", "bold": true },
+        { "text": " in student supercomputing finals." }
       ]
     },
     {
@@ -17,12 +19,10 @@
       ]
     },
     {
-      "date": "2025",
+      "date": "2024",
       "content": [
-        { "text": "SC25 IndySCC", "bold": true },
-        { "text": ", " },
-        { "text": "Global 1st Place", "bold": true },
-        { "text": " in student supercomputing finals." }
+        { "text": "National Scholarship", "bold": true },
+        { "text": ", awarded for outstanding academic performance in 2023-2024." }
       ]
     }
   ]

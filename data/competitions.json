@@ -1,37 +1,70 @@
 {
   "title": "Competition Results",
   "showDate": true,
+  "datePlacement": "suffix",
   "items": [
     {
       "date": "2025.11",
       "content": [
+        { "text": "Global 1st Place, SC25 Indy Student Cluster Competition (IndySCC). Implemented full-stack optimization over distributed simulation workloads." }
+      ],
+      "headline": [
         { "text": "Global 1st Place", "bold": true },
-        { "text": ", SC25 IndySCC" },
-        { "text": ", with full-stack optimization over distributed simulation workloads." }
+        { "text": ", SC25 Indy Student Cluster Competition (IndySCC)" }
+      ],
+      "details": [
+        [
+          { "text": "Implemented full-stack optimization over distributed simulation workloads." }
+        ]
       ]
     },
     {
       "date": "2025.07",
       "content": [
+        { "text": "Second Prize, 12th National Parallel Application Challenge (PAC). Achieved 300% performance gain on matrix floating-point workloads." }
+      ],
+      "headline": [
         { "text": "Second Prize", "bold": true },
-        { "text": ", 12th National Parallel Application Challenge Finals" },
-        { "text": ", with around 300% performance gain on matrix floating-point tasks." }
+        { "text": ", 12th National Parallel Application Challenge (PAC)" }
+      ],
+      "details": [
+        [
+          { "text": "Achieved " },
+          { "text": "300% performance gain", "bold": true },
+          { "text": " on matrix floating-point workloads." }
+        ]
       ]
     },
     {
       "date": "2025.03",
       "content": [
+        { "text": "1st Place, 9th Huawei ICT China Challenge Finals. Optimized model partitioning and operator fusion on Mind-Speed, delivering 1.15x end-to-end training acceleration." }
+      ],
+      "headline": [
         { "text": "1st Place", "bold": true },
-        { "text": ", 9th Huawei ICT China Challenge Finals" },
-        { "text": ", achieved with 1.15x training acceleration after Mind-Speed migration." }
+        { "text": ", 9th Huawei ICT China Challenge Finals" }
+      ],
+      "details": [
+        [
+          { "text": "Optimized model partitioning and operator fusion on Mind-Speed, delivering " },
+          { "text": "1.15x", "bold": true },
+          { "text": " end-to-end training acceleration." }
+        ]
       ]
     },
     {
       "date": "2024.01",
       "content": [
+        { "text": "7th in National Finals, Alibaba Cloud Tianchi Autonomous Driving AI Challenge (Track 2). Integrated multiple open-source models under constrained compute to secure a top-7 national finish." }
+      ],
+      "headline": [
         { "text": "7th in National Finals", "bold": true },
-        { "text": ", Alibaba Cloud Tianchi Autonomous Driving AI Challenge (Track 2)" },
-        { "text": ", by integrating multiple open-source models under limited compute." }
+        { "text": ", Alibaba Cloud Tianchi Autonomous Driving AI Challenge (Track 2)" }
+      ],
+      "details": [
+        [
+          { "text": "Integrated multiple open-source models under constrained compute to secure a top-7 national finish." }
+        ]
       ]
     }
   ]
