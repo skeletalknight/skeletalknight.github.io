@@ -7,6 +7,7 @@
       "authors": "Jinyuan Mao (Co-author) and collaborators",
       "description": "Designed a hybrid sparse attention mechanism (HSA) with linear global attention and dynamic execution strategy. The system achieves 5.67x faster inference while preserving key context and SOTA generation quality.",
       "links": [
+        { "label": "Paper", "url": "papers/blockvid-2.pdf" },
         { "label": "Status", "url": "https://example.com/" }
       ]
     },

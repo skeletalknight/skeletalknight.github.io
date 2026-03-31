@@ -196,6 +196,10 @@ body {
   margin: 0;
 }
 
+.preprint-links {
+  margin-right: 6px;
+}
+
 .preprint-arxiv-link {
   color: #4ca6c8;
   text-decoration: underline;

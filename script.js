@@ -397,6 +397,9 @@ function renderPreprintsSection(mountNode, data, profileName) {
     const titleLine = document.createElement("p");
     titleLine.className = "section-bullet-text preprint-title-line";
 
+    const linksLine = document.createElement("span");
+    linksLine.className = "preprint-links";
+
     const arxivLink = document.createElement("a");
     let arxivHref = item.arxiv || "";
     if (!arxivHref && hasLegacyFormat) {
@@ -409,6 +412,20 @@ function renderPreprintsSection(mountNode, data, profileName) {
     arxivLink.className = "preprint-arxiv-link";
     arxivLink.textContent = "[arXiv]";
 
+    linksLine.appendChild(arxivLink);
+
+    if (item.pdf) {
+      const separator = document.createTextNode(" ");
+      const pdfLink = document.createElement("a");
+      pdfLink.href = item.pdf;
+      pdfLink.target = "_blank";
+      pdfLink.rel = "noopener noreferrer";
+      pdfLink.className = "preprint-arxiv-link";
+      pdfLink.textContent = "[PDF]";
+      linksLine.appendChild(separator);
+      linksLine.appendChild(pdfLink);
+    }
+
     const titleText = document.createElement("span");
     titleText.className = "preprint-title-text";
     let paperTitle = item.title || "";
@@ -418,7 +435,7 @@ function renderPreprintsSection(mountNode, data, profileName) {
     }
     titleText.textContent = paperTitle ? ` ${paperTitle}` : "";
 
-    titleLine.appendChild(arxivLink);
+    titleLine.appendChild(linksLine);
     titleLine.appendChild(titleText);
 
     const authorsLine = document.createElement("p");

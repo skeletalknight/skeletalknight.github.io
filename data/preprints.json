@@ -3,7 +3,7 @@
   "showDate": false,
   "items": [
     {
-      "arxiv": "https://arxiv.org/",
+      "arxiv": "papers/blockvid-2.pdf",
       "title": "BlockVid-2: Co-Design of Sparse Attention and KV Management for Text-Conditioned Interactive Video World Models",
       "authors": "Zeyu Zhang*, Jinyuan Mao*, Dakai An, Wangbo Zhao, Jiasheng Tang, Yinghao Yu, Fan Wang, Wei Wang, Bohan Zhuang"
     },
