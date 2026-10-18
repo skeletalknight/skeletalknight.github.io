@@ -1,52 +1,325 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Homepage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jinyuan Mao · 茅晋源</title>
+  <meta name="description" content="Jinyuan Mao — undergraduate researcher at Zhejiang University working on generative AI and efficient AI: video generation, world models and interactive image generation.">
+  <meta name="author" content="Jinyuan Mao">
+  <meta property="og:title" content="Jinyuan Mao">
+  <meta property="og:description" content="Generative AI · Efficient AI · Zhejiang University">
+  <meta property="og:image" content="https://skeletalknight.github.io/assets/img/avatar.jpg">
+  <meta property="og:url" content="https://skeletalknight.github.io/">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="canonical" href="https://skeletalknight.github.io/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jinyuan Mao",
+    "alternateName": "茅晋源",
+    "url": "https://skeletalknight.github.io/",
+    "image": "https://skeletalknight.github.io/assets/img/avatar.jpg",
+    "email": "mailto:jymao@zju.edu.cn",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "Zhejiang University" },
+    "knowsAbout": ["Generative AI", "Efficient AI", "Video Generation", "World Models"],
+    "sameAs": [
+      "https://github.com/skeletalknight",
+      "https://skeletalknight.github.io/My-Notebook/"
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260316c">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=20261018">
+
+  <!-- Apply the saved theme before first paint to avoid a flash. -->
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  </script>
 </head>
 <body>
-  <canvas id="particle-canvas" aria-hidden="true"></canvas>
-  <div class="page-bg"></div>
-  <main class="site-wrap">
-    <section class="hero section-card" id="intro-section">
-      <div class="avatar-wrap">
-        <img id="avatar" alt="Profile photo" class="avatar" src="assets/images/avatar.svg">
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">Jinyuan Mao</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#honors">Honors</a>
+      <a href="assets/Jinyuan_Mao_CV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- ============ ABOUT ============ -->
+  <section class="hero" id="about">
+    <div class="hero-photo">
+      <img src="assets/img/avatar.jpg" alt="Portrait of Jinyuan Mao" width="640" height="640">
+    </div>
+
+    <div class="hero-body">
+      <p class="eyebrow">Undergraduate Researcher · Zhejiang University</p>
+      <h1 class="name">Jinyuan Mao <span class="name-zh" lang="zh">茅晋源</span></h1>
+
+      <div class="bio">
+        <p>
+          I am a senior undergraduate at <a href="https://www.zju.edu.cn/english/" target="_blank" rel="noopener">Zhejiang University</a>,
+          pursuing a dual degree in Statistics and Information Management &amp; Information Systems.
+          My research is on <strong>generative AI</strong> and <strong>efficient AI</strong>. I am
+          interested in making video diffusion models and interactive world models faster, more
+          consistent over long horizons, and easier to steer.
+        </p>
+        <p>
+          Most recently, I was a research intern at <a href="https://pixai.art" target="_blank" rel="noopener">PixAI</a>,
+          working with Chenxi Liu (University of Victoria) on interactive image generation.
+          Before that, I spent eight months at the <a href="https://ziplab.co" target="_blank" rel="noopener">ZIP Lab</a>
+          advised by <a href="https://bohanzhuang.github.io" target="_blank" rel="noopener">Prof. Bohan Zhuang</a>,
+          working on sparse attention and KV-cache design for long video generation.
+        </p>
+        <p>
+          I also enjoy high-performance computing: our team placed <strong>1st globally</strong> at the
+          SC25 IndySCC, and I look after the GPU infrastructure at ZJU X-Lab.
+        </p>
       </div>
-      <div class="hero-content">
-        <h1 id="name" class="name"></h1>
-        <p id="tagline" class="tagline"></p>
-        <div id="intro-paragraphs" class="intro-paragraphs"></div>
-        <div id="social-links" class="social-links"></div>
+
+      <ul class="tags" aria-label="Research interests">
+        <li>Video Generation</li>
+        <li>World Models</li>
+        <li>Efficient Attention</li>
+        <li>Interactive Image Generation</li>
+      </ul>
+
+      <div class="links">
+        <a class="btn btn-primary" href="mailto:jymao@zju.edu.cn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          jymao@zju.edu.cn
+        </a>
+        <a class="btn" href="assets/Jinyuan_Mao_CV.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+          CV
+        </a>
+        <a class="btn" href="https://github.com/skeletalknight" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 2C6.48 2 2 6.58 2 12.24c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.49l-.01-1.89c-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.12-1.51-1.12-1.51-.92-.65.07-.64.07-.64 1.01.07 1.55 1.08 1.55 1.08.91 1.59 2.38 1.13 2.96.86.09-.68.35-1.13.63-1.39-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.73 0 0 .84-.27 2.75 1.05a9.34 9.34 0 0 1 5.01 0c1.9-1.32 2.74-1.05 2.74-1.05.55 1.42.2 2.47.1 2.73.64.72 1.02 1.64 1.02 2.76 0 3.95-2.35 4.82-4.59 5.07.36.32.68.95.68 1.91l-.01 2.83c0 .27.18.6.69.49A10.26 10.26 0 0 0 22 12.24C22 6.58 17.52 2 12 2Z"/></svg>
+          GitHub
+        </a>
+        <a class="btn" href="https://skeletalknight.github.io/My-Notebook/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2.5Z"/><path d="M4 19.5A2 2 0 0 0 6 21h13M9 7h6M9 11h4"/></svg>
+          Notes
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="content-section" id="news-section">
-      <h2>News</h2>
-      <div id="news-list" class="news-list"></div>
-    </section>
+  <!-- quick facts -->
+  <section class="facts" aria-label="Highlights">
+    <div class="fact"><span class="fact-num">1<small>/20</small></span><span class="fact-label">Major rank · GPA 92.5</span></div>
+    <div class="fact"><span class="fact-num">3×</span><span class="fact-label">National Scholarship</span></div>
+    <div class="fact"><span class="fact-num">3</span><span class="fact-label">Papers, all first / co-first</span></div>
+    <div class="fact"><span class="fact-num">#1</span><span class="fact-label">SC25 IndySCC, global</span></div>
+  </section>
 
-    <div id="profile-sections"></div>
-  </main>
+  <!-- ============ NEWS ============ -->
+  <section class="section" id="news">
+    <h2 class="section-title">News</h2>
+    <ul class="news" id="news-list">
+      <li><time>Oct 2026</time><p>Awarded the <strong>National Scholarship</strong> (top 0.2%) for the third consecutive year.</p></li>
+      <li><time>Oct 2026</time><p><strong>HimmBO</strong>, my first-author work on interactive LoRA merging, is submitted to <strong>Eurographics 2027</strong>.</p></li>
+      <li><time>Sep 2026</time><p><strong>WorldAttention</strong> is on <a href="https://arxiv.org/abs/2609.34606" target="_blank" rel="noopener">arXiv</a>. It received <strong>Accept / Accept / Accept</strong> (5/5/5) reviews at NeurIPS 2026.</p></li>
+      <li><time>Aug 2026</time><p><strong>BIFE</strong> is accepted to <strong>SIGGRAPH Asia 2026</strong> Technical Communications.</p></li>
+      <li><time>Jun 2026</time><p>Joined <strong>PixAI</strong> as a research intern, working with Chenxi Liu on interactive image generation.</p></li>
+      <li class="more"><time>Nov 2025</time><p>Our team won <strong>1st place globally</strong> at the SC25 IndySCC Student Cluster Competition.</p></li>
+      <li class="more"><time>Oct 2025</time><p>Awarded the <strong>National Scholarship</strong> (top 0.2%) for the second consecutive year.</p></li>
+      <li class="more"><time>Oct 2025</time><p>Joined the <strong>ZIP Lab</strong> at Zhejiang University, advised by Prof. Bohan Zhuang.</p></li>
+      <li class="more"><time>Aug 2025</time><p><strong>National 2nd Prize</strong> at the 12th National Parallel Application Challenge (PAC).</p></li>
+      <li class="more"><time>Jun 2025</time><p>Designed and built the official website of <a href="http://zjuxlab.com/" target="_blank" rel="noopener">ZJU X-Lab</a> from scratch.</p></li>
+      <li class="more"><time>May 2025</time><p>My study notes are online: <a href="https://skeletalknight.github.io/My-Notebook/" target="_blank" rel="noopener">My Notebook</a>.</p></li>
+      <li class="more"><time>Mar 2025</time><p><strong>1st place</strong> in the National Finals of the ICT Competition.</p></li>
+    </ul>
+    <button class="text-btn" id="news-toggle" type="button" aria-expanded="false" aria-controls="news-list">Show older news</button>
+  </section>
 
-  <template id="news-item-template">
-    <article class="news-item">
-      <div class="news-date"></div>
-      <p class="news-content"></p>
+  <!-- ============ PUBLICATIONS ============ -->
+  <section class="section" id="publications">
+    <h2 class="section-title">Publications</h2>
+    <p class="section-note">* equal contribution</p>
+
+    <article class="pub">
+      <div class="pub-venue" style="--h: 172">
+        <span class="pv-name">SIGGRAPH Asia</span>
+        <span class="pv-year">2026</span>
+      </div>
+      <div class="pub-body">
+        <h3 class="pub-title">BIFE: Better Interaction, Fewer Errors for Minute-Long Video Generation</h3>
+        <p class="pub-authors">Zeyu Zhang*, <span class="me">Jinyuan Mao*</span>, Shuning Chang, Yuanyu He, Yizeng Han, Jiasheng Tang, Fan Wang, Bohan Zhuang</p>
+        <p class="pub-where"><em>SIGGRAPH Asia 2026, Technical Communications</em></p>
+        <p class="pub-tldr">A semantic sparse KV cache retrieves the long-range context that minute-long generation needs, cutting error accumulation and improving VDE-Subject by <strong>22.2%</strong>.</p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2511.22973" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://arxiv.org/pdf/2511.22973" target="_blank" rel="noopener">PDF</a>
+        </div>
+      </div>
     </article>
-  </template>
 
-  <template id="timeline-item-template">
-    <article class="timeline-item">
-      <div class="timeline-date"></div>
-      <p class="timeline-content"></p>
+    <article class="pub">
+      <div class="pub-venue" style="--h: 262">
+        <span class="pv-name">NeurIPS</span>
+        <span class="pv-year">2026</span>
+      </div>
+      <div class="pub-body">
+        <h3 class="pub-title">WorldAttention: An Efficient Attention Architecture for Interactive Video World Models</h3>
+        <p class="pub-authors">Zeyu Zhang*, <span class="me">Jinyuan Mao*</span>, Dakai An*, Wangbo Zhao, Hanfeng Lu, Jiasheng Tang, Yinghao Yu, Wei Wang, Bohan Zhuang</p>
+        <p class="pub-where"><em>NeurIPS 2026</em> <span class="badge">Reviews: Accept / Accept / Accept</span></p>
+        <p class="pub-tldr">Attention heads in video diffusion transformers are sparse in very different ways. <em>Hybrid Sparse Attention</em> pairs a linear global branch with head-adaptive block-sparse attention for a <strong>2.21×</strong> end-to-end speedup at matched quality.</p>
+        <div class="pub-links">
+          <a href="https://arxiv.org/abs/2609.34606" target="_blank" rel="noopener">arXiv</a>
+          <a href="https://arxiv.org/pdf/2609.34606" target="_blank" rel="noopener">PDF</a>
+        </div>
+      </div>
     </article>
-  </template>
 
-  <script src="script.js?v=20260316c" defer></script>
+    <article class="pub">
+      <div class="pub-venue" style="--h: 32">
+        <span class="pv-name">Eurographics</span>
+        <span class="pv-year">2027</span>
+      </div>
+      <div class="pub-body">
+        <h3 class="pub-title">HimmBO: High-Dimensional Interactive Model-Merging Bayesian Optimization for Image Generation</h3>
+        <p class="pub-authors"><span class="me">Jinyuan Mao</span>, Zhihao Shen, Chenxi Liu</p>
+        <p class="pub-where"><em>Under review at Eurographics 2027</em></p>
+        <p class="pub-tldr">Two-stage preferential Bayesian optimization scales interactive LoRA merging from a few dozen to <strong>1,080 adapters</strong>. A style-aware kernel shares preferences across similar adapters, so it needs <strong>under 1/10</strong> of the image generations used by prior work.</p>
+        <div class="pub-links">
+          <span class="soon">Paper coming soon</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <h2 class="section-title">Research Experience</h2>
+
+    <ol class="timeline">
+      <li class="tl-item">
+        <div class="tl-head">
+          <h3><a href="https://pixai.art" target="_blank" rel="noopener">PixAI</a> <span class="role">Research Intern</span></h3>
+          <span class="tl-date">Jun 2026 – Oct 2026</span>
+        </div>
+        <p class="tl-sub">Interactive image generation · Advised by Chenxi Liu (University of Victoria)</p>
+        <ul>
+          <li>Led <strong>HimmBO</strong> as first author: method design, implementation, experiments and writing.</li>
+          <li>Built a two-stage preferential Bayesian optimization framework that scales interactive LoRA merging to <strong>1,080 adapters</strong>. Its level-set screening stage generates no images during interaction.</li>
+          <li>Designed a style-aware kernel that transfers preference information across visually similar adapters, reaching a target similarity with <strong>under 1/10</strong> of the image generations prior work needs.</li>
+        </ul>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-head">
+          <h3><a href="https://ziplab.co" target="_blank" rel="noopener">ZIP Lab, Zhejiang University</a> <span class="role">Research Intern</span></h3>
+          <span class="tl-date">Oct 2025 – Jun 2026</span>
+        </div>
+        <p class="tl-sub">Efficient video generation &amp; world models · Advised by <a href="https://bohanzhuang.github.io" target="_blank" rel="noopener">Prof. Bohan Zhuang</a></p>
+        <ul>
+          <li>Worked on sparse attention and KV-cache design for video generation, as co-first author of <strong>WorldAttention</strong> and <strong>BIFE</strong>.</li>
+        </ul>
+      </li>
+
+      <li class="tl-item">
+        <div class="tl-head">
+          <h3>Provincial SRTP Project <span class="role">Project Leader</span></h3>
+          <span class="tl-date">Apr 2024 – Jun 2025</span>
+        </div>
+        <p class="tl-sub">Database agent framework · Zhejiang University</p>
+        <ul>
+          <li>Proposed a two-stage trial-and-error learning framework that improves how database agents interact, with clear gains on research benchmarks. Filed one national invention patent.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="section" id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu">
+      <div class="tl-head">
+        <h3><a href="https://www.zju.edu.cn/english/" target="_blank" rel="noopener">Zhejiang University</a></h3>
+        <span class="tl-date">Sep 2023 – Jun 2027</span>
+      </div>
+      <p class="tl-sub">B.S. in Statistics &amp; B.Mgt. in Information Management and Information Systems (dual degree) · Hangzhou, China</p>
+      <p class="edu-stats"><span>GPA <strong>92.5</strong>/100</span><span>Rank <strong>1</strong>/20</span></p>
+    </div>
+  </section>
+
+  <!-- ============ HONORS ============ -->
+  <section class="section" id="honors">
+    <h2 class="section-title">Honors &amp; Awards</h2>
+    <ul class="honors">
+      <li><span class="h-what"><strong>1st Place Globally</strong>, SC25 IndySCC Student Cluster Competition</span><span class="h-when">Nov 2025</span></li>
+      <li><span class="h-what"><strong>National 2nd Prize</strong>, 12th National Parallel Application Challenge (PAC)</span><span class="h-when">Aug 2025</span></li>
+      <li><span class="h-what"><strong>1st Place, National Finals</strong>, ICT Competition</span><span class="h-when">Mar 2025</span></li>
+      <li><span class="h-what"><strong>National Scholarship</strong> (top 0.2%), awarded three times</span><span class="h-when">2024, 2025, 2026</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ OTHER EXPERIENCE ============ -->
+  <section class="section" id="other">
+    <h2 class="section-title">Other Experience</h2>
+    <ol class="timeline compact">
+      <li class="tl-item">
+        <div class="tl-head">
+          <h3><a href="http://zjuxlab.com/" target="_blank" rel="noopener">ZJU X-Lab</a> <span class="role">Operations &amp; Infrastructure Lead</span></h3>
+          <span class="tl-date">Jun 2025 – Present</span>
+        </div>
+        <p class="tl-sub">Student-run innovation organization</p>
+        <ul>
+          <li>Run the GPU clusters with Docker-isolated environments for 10+ projects. Built the private Overleaf, NAS storage, VPN and the organization's website.</li>
+        </ul>
+      </li>
+      <li class="tl-item">
+        <div class="tl-head">
+          <h3>Nodesk AI <span class="role">AI Engineering Intern</span></h3>
+          <span class="tl-date">Jun 2025 – Aug 2025</span>
+        </div>
+        <p class="tl-sub">Industry internship · Hangzhou</p>
+        <ul>
+          <li>Built a smart-reply cross-validation module and fine-tuned it for a <strong>15%</strong> accuracy gain. Co-authored a patent on a guardrail that combines reranking models with scenario recognition.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <h2 class="section-title">Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt>
+      <dd><span>Python</span><span>C/C++</span><span>SQL</span><span>LaTeX</span></dd>
+      <dt>ML &amp; Systems</dt>
+      <dd><span>PyTorch</span><span>Diffusers</span><span>MPI</span><span>OpenMP</span><span>Docker</span><span>Linux</span></dd>
+    </dl>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year">2026</span> Jinyuan Mao</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+
+<script src="main.js?v=20261018" defer></script>
 </body>
 </html>
