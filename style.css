@@ -367,8 +367,8 @@ strong { font-weight: 600; color: var(--ink); }
 /* ---------- Publications ---------- */
 .pub {
   display: grid;
-  grid-template-columns: 148px 1fr;
-  gap: 26px;
+  grid-template-columns: 208px 1fr;
+  gap: 24px;
   padding: 22px;
   margin: 0 -22px;
   border-radius: 16px;
@@ -388,10 +388,32 @@ strong { font-weight: 600; color: var(--ink); }
   color: hsl(var(--h) 55% 28%);
   border: 1px solid hsl(var(--h) 40% 88%);
 }
+.pub-venue { position: relative; overflow: hidden; isolation: isolate; --sl: 45% 95%; }
+.pv-img {
+  position: absolute; top: 8px; left: 8px; z-index: -2;
+  width: calc(100% - 16px); height: calc(66% - 8px);
+  object-fit: contain; object-position: center top;
+  border-radius: 4px;
+  mix-blend-mode: multiply;
+  opacity: .6;
+  transition: opacity .3s ease;
+}
+.pub-venue::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(to top, hsl(var(--h) var(--sl)) 22%, hsl(var(--h) var(--sl) / .4) 46%, transparent 62%);
+}
+.pub:hover .pv-img { opacity: 1; }
+:root[data-theme="dark"] .pv-img { mix-blend-mode: normal; opacity: .45; }
+:root[data-theme="dark"] .pub:hover .pv-img { opacity: .9; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .pv-img { mix-blend-mode: normal; opacity: .45; }
+  :root:not([data-theme="light"]) .pub:hover .pv-img { opacity: .9; }
+}
 .pv-name { font: 600 1rem/1.15 var(--serif); }
 .pv-year { font: 500 .78rem/1.4 var(--mono); opacity: .75; }
 
 :root[data-theme="dark"] .pub-venue {
+  --sl: 25% 15%;
   background:
     radial-gradient(120% 90% at 100% 0%, hsl(var(--h) 45% 30% / .7), transparent 60%),
     hsl(var(--h) 25% 15%);
@@ -400,6 +422,7 @@ strong { font-weight: 600; color: var(--ink); }
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) .pub-venue {
+    --sl: 25% 15%;
     background:
       radial-gradient(120% 90% at 100% 0%, hsl(var(--h) 45% 30% / .7), transparent 60%),
       hsl(var(--h) 25% 15%);
@@ -568,6 +591,7 @@ strong { font-weight: 600; color: var(--ink); }
 
   .pub { grid-template-columns: 1fr; gap: 14px; padding: 18px 0; margin: 0; }
   .pub:hover { background: none; box-shadow: none; }
+  .pv-img, .pub-venue::after { display: none; }
   .pub-venue { aspect-ratio: auto; flex-direction: row; align-items: baseline; gap: 8px; width: fit-content; padding: 6px 12px; border-radius: 8px; }
 
   .skills { grid-template-columns: 1fr; gap: 4px; }
