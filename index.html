@@ -238,9 +238,10 @@
           <h3>University of Virginia <span class="role">Research Intern</span></h3>
           <span class="tl-date">Jul 2026 – Present</span>
         </div>
-        <p class="tl-sub">Efficient pixel-space diffusion · Advised by Prof. Sheng Li</p>
+        <p class="tl-sub">Pixel-space diffusion and its frequency structure · Advised by Prof. Sheng Li</p>
         <ul>
-          <li>Exploring spectrum-guided resolution growth along the denoising trajectory; on <a href="https://peppaking8.github.io/minit2i/" target="_blank" rel="noopener">MiniT2I</a>, a pixel-space text-to-image model, about <strong>1.8×</strong> faster after fine-tuning with near-unchanged GenEval.</li>
+          <li>Proposed <strong>High-Resolution Guidance</strong>, which updates low-frequency predictions with a cheap low-resolution model and recomputes guidance only at anchor steps. It needs <strong>2.2×</strong> less sampling compute on 512 px <a href="https://peppaking8.github.io/minit2i/" target="_blank" rel="noopener">MiniT2I</a> with no loss in PickScore or GenEval, and outperforms CFG-Cache at matched cost.</li>
+          <li>Designed a pixel-space MoE reaching FID <strong>4.22</strong> on ImageNet vs. 4.59 for dense JiT, with 60% of JiTMoE's parameters.</li>
         </ul>
       </li>
 
